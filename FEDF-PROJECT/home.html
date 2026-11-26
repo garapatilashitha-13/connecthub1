@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ConnectHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">💜 ConnectHub</div>
+
+        <nav>
+            <a href="home.html">🏠 Home</a>
+            <a href="profile.html">👤 Profile</a>
+            <button class="nav-logout" onclick="logout()">Logout</button>
+        </nav>
+
+    </header>
+
+    <main class="home-container">
+
+        <!-- Welcome -->
+        <section class="welcome-card">
+            <h1 id="welcomeMessage">Welcome!</h1>
+            <p>Share your thoughts with the ConnectHub community.</p>
+        </section>
+
+
+        <!-- Create Post -->
+        <section class="create-post-card">
+
+            <h2>✍️ Create a Post</h2>
+
+            <textarea id="postText"
+                      placeholder="What's on your mind?"></textarea>
+
+            <button class="btn primary-btn"
+                    onclick="createPost()">
+                📤 Publish Post
+            </button>
+
+        </section>
+
+
+        <!-- Posts -->
+        <section class="feed-card">
+
+            <div class="section-title">
+                <h2>🌎 Community Posts</h2>
+            </div>
+
+            <div id="posts"></div>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        checkUserLogin();
+        displayWelcome();
+        displayPosts();
+    </script>
+
+</body>
+</html>

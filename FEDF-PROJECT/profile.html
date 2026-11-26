@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - ConnectHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">💜 ConnectHub</div>
+
+        <nav>
+            <a href="home.html">🏠 Home</a>
+            <a href="profile.html">👤 Profile</a>
+            <button class="nav-logout" onclick="logout()">Logout</button>
+        </nav>
+
+    </header>
+
+
+    <main class="profile-container">
+
+        <section class="profile-card">
+
+            <div class="profile-avatar">
+                👤
+            </div>
+
+            <h1 id="profileName">User</h1>
+
+            <p id="profileEmail">Email</p>
+
+            <div class="profile-stats">
+                <div>
+                    <strong id="postCount">0</strong>
+                    <span>Posts</span>
+                </div>
+
+                <div>
+                    <strong>ConnectHub</strong>
+                    <span>Community</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="my-posts-card">
+
+            <h2>📝 My Posts</h2>
+
+            <div id="myPosts"></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+    <script>
+        checkUserLogin();
+        displayProfile();
+    </script>
+
+</body>
+</html>

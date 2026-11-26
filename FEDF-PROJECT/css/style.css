@@ -1,0 +1,1062 @@
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2,
+            #f093fb
+        );
+
+    min-height: 100vh;
+
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #6c4ab6;
+    font-weight: bold;
+}
+
+button,
+a {
+    transition: 0.3s;
+}
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* =====================================================
+   LANDING PAGE
+   ===================================================== */
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.landing-card {
+
+    width: 500px;
+
+    padding: 55px 40px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.landing-card .logo {
+
+    color: #6c4ab6;
+
+    font-size: 34px;
+
+    margin-bottom: 25px;
+}
+
+.landing-card h1 {
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+
+    color: #4c3a82;
+}
+
+.landing-card p {
+
+    color: #666;
+
+    font-size: 17px;
+
+    margin-bottom: 30px;
+}
+
+.button-group {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.admin-link {
+
+    margin-top: 30px;
+}
+
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+
+.btn {
+
+    border: none;
+
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    display: inline-block;
+}
+
+.primary-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2
+        );
+
+    color: white;
+}
+
+.primary-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.secondary-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #f093fb,
+            #f5576c
+        );
+
+    color: white;
+}
+
+.secondary-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(245, 87, 108, 0.35);
+}
+
+.admin-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff9966,
+            #ff5e62
+        );
+
+    color: white;
+}
+
+.full-btn {
+
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+
+/* =====================================================
+   LOGIN / SIGNUP
+   ===================================================== */
+
+.auth-container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+.auth-card {
+
+    width: 430px;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.auth-card .logo {
+
+    color: #6c4ab6;
+
+    margin-bottom: 15px;
+}
+
+.auth-card h2 {
+
+    font-size: 30px;
+
+    color: #4c3a82;
+
+    margin-bottom: 8px;
+}
+
+.subtitle {
+
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+.auth-card input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin: 8px 0;
+
+    border: 2px solid #e2def0;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.auth-card input:focus {
+
+    border-color: #7654c7;
+
+    box-shadow:
+        0 0 0 3px rgba(118, 84, 199, 0.12);
+}
+
+.auth-card p {
+
+    margin-top: 20px;
+}
+
+.back-link {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #777;
+}
+
+.admin-card {
+
+    border-top: 6px solid #ff6b6b;
+}
+
+.admin-icon {
+
+    font-size: 50px;
+}
+
+.admin-hint {
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+
+.navbar {
+
+    height: 75px;
+
+    padding: 0 5%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4c3a82,
+            #764ba2
+        );
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.navbar nav a {
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+
+    color: #ffd6ff;
+}
+
+.nav-logout {
+
+    border: none;
+
+    padding: 9px 17px;
+
+    border-radius: 8px;
+
+    background: #ff6b6b;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.nav-logout:hover {
+
+    background: #ff4757;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   USER HOME
+   ===================================================== */
+
+.home-container {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+}
+
+
+/* CSS GRID - Requirement */
+
+.home-container {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+}
+
+.welcome-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f4efff
+        );
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.welcome-card h1 {
+
+    color: #5b3f9c;
+
+    margin-top: 0;
+}
+
+.create-post-card,
+.feed-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.create-post-card textarea {
+
+    width: 100%;
+
+    min-height: 120px;
+
+    resize: vertical;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    border: 2px solid #e4def3;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.create-post-card textarea:focus {
+
+    border-color: #7654c7;
+}
+
+.section-title {
+
+    border-bottom: 2px solid #eee;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   POSTS
+   ===================================================== */
+
+.post-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #faf9ff,
+            #ffffff
+        );
+
+    border: 1px solid #e6e0f5;
+
+    padding: 20px;
+
+    margin-bottom: 18px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.post-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.avatar,
+.user-avatar {
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #f093fb
+        );
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 20px;
+}
+
+.post-header h3 {
+
+    margin: 0;
+
+    color: #4c3a82;
+}
+
+.post-header small {
+
+    color: #888;
+}
+
+.post-text {
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin: 20px 0;
+}
+
+.post-actions {
+
+    border-top: 1px solid #eee;
+
+    padding-top: 12px;
+}
+
+.like-btn {
+
+    border: none;
+
+    background: #fff0f5;
+
+    color: #e84a7c;
+
+    padding: 9px 15px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.like-btn:hover {
+
+    background: #ffe0eb;
+
+    transform: scale(1.03);
+}
+
+
+/* =====================================================
+   EMPTY MESSAGE
+   ===================================================== */
+
+.empty-message {
+
+    text-align: center;
+
+    padding: 40px;
+
+    color: #888;
+}
+
+.empty-icon {
+
+    font-size: 45px;
+}
+
+
+/* =====================================================
+   PROFILE
+   ===================================================== */
+
+.profile-container {
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 35px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+}
+
+.profile-card {
+
+    text-align: center;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.profile-avatar {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #f093fb
+        );
+}
+
+.profile-card h1 {
+
+    color: #4c3a82;
+}
+
+.profile-card p {
+
+    color: #777;
+}
+
+.profile-stats {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 60px;
+
+    margin-top: 25px;
+}
+
+.profile-stats div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.profile-stats strong {
+
+    color: #6c4ab6;
+
+    font-size: 20px;
+}
+
+.profile-stats span {
+
+    color: #888;
+}
+
+.my-posts-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.my-post {
+
+    padding: 15px;
+
+    margin: 12px 0;
+
+    background: #f8f5ff;
+
+    border-left: 5px solid #7654c7;
+
+    border-radius: 10px;
+}
+
+.my-post span {
+
+    color: #e84a7c;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   ADMIN DASHBOARD
+   ===================================================== */
+
+.admin-container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 30px auto;
+}
+
+.admin-welcome {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.admin-welcome h1 {
+
+    color: #4c3a82;
+
+    margin-top: 0;
+}
+
+
+/* CSS GRID */
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.stat-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f8f3ff
+        );
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+
+    font-size: 35px;
+}
+
+.stat-card h3 {
+
+    color: #6c4ab6;
+
+    font-size: 30px;
+
+    margin: 8px;
+}
+
+.stat-card p {
+
+    color: #777;
+}
+
+.admin-section {
+
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.admin-section-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #eee;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 20px;
+}
+
+.admin-section-header h2 {
+
+    color: #4c3a82;
+
+    margin: 0;
+}
+
+.admin-section-header p {
+
+    color: #888;
+}
+
+
+/* USERS */
+
+.user-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    background: #f8f5ff;
+
+    border-radius: 12px;
+}
+
+.user-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    flex: 1;
+}
+
+.user-info strong {
+
+    color: #4c3a82;
+}
+
+.user-info span {
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+.user-number {
+
+    color: #999;
+
+    font-weight: bold;
+}
+
+
+/* ADMIN POSTS */
+
+.admin-post-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 18px;
+
+    margin-bottom: 12px;
+
+    background: #fff8f8;
+
+    border-left: 5px solid #ff6b6b;
+
+    border-radius: 10px;
+}
+
+.admin-post-row p {
+
+    color: #555;
+
+    margin: 8px 0;
+}
+
+.admin-post-row small {
+
+    color: #e84a7c;
+}
+
+.delete-btn {
+
+    border: none;
+
+    background: #ff5c5c;
+
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.delete-btn:hover {
+
+    background: #e63946;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+
+        height: auto;
+
+        padding: 18px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .navbar nav {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .landing-card {
+
+        width: 90%;
+
+        padding: 35px 20px;
+    }
+
+    .landing-card h1 {
+
+        font-size: 27px;
+    }
+
+    .auth-card {
+
+        width: 95%;
+
+        padding: 30px 20px;
+    }
+
+    .stats-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .admin-section-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .admin-post-row {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .profile-stats {
+
+        gap: 30px;
+    }
+}

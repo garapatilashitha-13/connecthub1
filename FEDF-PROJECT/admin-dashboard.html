@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - ConnectHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar admin-navbar">
+
+        <div class="logo">🔐 ConnectHub Admin</div>
+
+        <button class="nav-logout" onclick="adminLogout()">
+            Logout
+        </button>
+
+    </header>
+
+
+    <main class="admin-container">
+
+        <section class="admin-welcome">
+
+            <h1>Admin Dashboard</h1>
+
+            <p>Manage users and community posts.</p>
+
+        </section>
+
+
+        <!-- Statistics -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <span class="stat-icon">👥</span>
+                <h3 id="totalUsers">0</h3>
+                <p>Total Users</p>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">📝</span>
+                <h3 id="totalPosts">0</h3>
+                <p>Total Posts</p>
+            </div>
+
+        </section>
+
+
+        <!-- User Management -->
+
+        <section class="admin-section">
+
+            <div class="admin-section-header">
+
+                <div>
+                    <h2>👥 User Management</h2>
+                    <p>View registered users.</p>
+                </div>
+
+                <button class="btn primary-btn"
+                        onclick="showUsers()">
+                    View Users
+                </button>
+
+            </div>
+
+            <div id="users"></div>
+
+        </section>
+
+
+        <!-- Post Management -->
+
+        <section class="admin-section">
+
+            <div class="admin-section-header">
+
+                <div>
+                    <h2>📝 Post Management</h2>
+                    <p>View and manage community posts.</p>
+                </div>
+
+                <button class="btn secondary-btn"
+                        onclick="showAdminPosts()">
+                    View Posts
+                </button>
+
+            </div>
+
+            <div id="adminPosts"></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+    <script>
+        checkAdminLogin();
+        updateAdminStats();
+    </script>
+
+</body>
+</html>
